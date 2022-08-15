@@ -6,10 +6,10 @@ const catagorySchema = new Schema(
             type: String,
             required: true,
             unique: false,
-            trim: truex
+            trim: true
         }
     }
-)
+);
 
 const Catagory = model('Catagory', catagorySchema);
 module.exports = Catagory;
