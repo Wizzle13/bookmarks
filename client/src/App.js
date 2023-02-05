@@ -2,9 +2,11 @@ import React from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Login from './pages/Login-Signup';
-// import NoMatch from './pages/NoMatch';
-// import Profile from './pages/Profile';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import NoMatch from './pages/NoMatch';
+
+import Profile from './pages/Profile';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -31,41 +33,42 @@ const client = new ApolloClient({
 });
 
 function App() {
-    return (
-      <ApolloProvider client={client}>
-        <Router>
-          <div className="flex-column justify-flex-start min-100-vh">
-            <Header />
-            <div className="container">
-              <Routes>
-                <Route
-                  path="/"
-                  element={<Home />}
-                />
-                {/* <Route
-                  path="/login"
-                  element={<Login-Signup />}
-                />
-                <Route
-                  path="/signup"
-                  element={<Login-Signup />}
-                />
-                <Route path="/profile">
-                  <Route path=":username" element={<Profile />} />
-                  <Route path="" element={<Profile />} />
-                </Route>
-                
-                <Route
-                  path="*"
-                  element={<NoMatch />}
-                />   */}
-              </Routes>
-            </div>
-            <Footer />
+  return (
+    <ApolloProvider client={client}>
+      <Router>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Header />
+          <div className="container">
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              
+              <Route path="/profile">
+                <Route path=":username" element={<Profile />} />
+                <Route path="" element={<Profile />} />
+              </Route>
+              
+              <Route
+                path="*"
+                element={<NoMatch />}
+              />  
+            </Routes>
           </div>
-        </Router>
-      </ApolloProvider>
-    );
-  }
-  
-  export default App;
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
+  );
+}
+
+export default App;
