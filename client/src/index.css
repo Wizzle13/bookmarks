@@ -84,53 +84,6 @@ a:visited {
   color: inherit;
 }
 
-nav {
-  width: 100%;
-  justify-content: center;
-}
-
-nav a {
-  padding: 6px 10px;
-  margin: 0 15px;
-  transition: all 0.2s;
-}
-
-nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
-}
-
-.page-title {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.btn,
-.pill {
-  font-size: 1.3rem;
-  text-decoration: none;
-  padding: 0.5rem 1.2rem;
-  margin: 5px 0;
-  border-radius: var(--border-radius);
-  border: none;
-  color: var(--dark);
-  outline: none;
-  background-color: var(--secondary);
-  transition: all 0.5s;
-}
-
-.btn:hover,
-.pill:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
-}
-
-.btn-inline {
-  display: inline;
-}
-
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
@@ -138,19 +91,25 @@ nav a:hover {
   border-radius: var(--border-radius);
   background-color: var(--light);
   color: var(--dark);
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 10px 10px goldenrod;
 }
 
 .card-header {
   color: var(--secondary);
-  margin: 0;
+  margin: auto;
   background-color: var(--dark);
   padding: 0.625rem;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
+  
 }
 
 .card-body {
   padding: 2.5%;
   font-size: 1.4rem;
+  background-color: gray;
+  color: white;
 }
 
 /* FORM */
