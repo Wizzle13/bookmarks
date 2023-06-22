@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 
 
 import Auth from '../utils/auth';
+import BookmarkList from '../components/bookmarklist';
 
 const Home = () => {
   // use useQuery hook to make query request
@@ -21,7 +22,9 @@ const Home = () => {
         )}
         <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           
-            <div>Loading...</div>
+            <div>
+              <BookmarkList />
+            </div>
           
         </div>
         
