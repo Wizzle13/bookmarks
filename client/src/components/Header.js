@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
+import { slide as Menu } from 'react-burger-menu'
 
 const Header = () => {
   const logout = event => {
@@ -14,22 +15,16 @@ const Header = () => {
           <h1>The Bookmark!</h1>
         </Link>
 
-        <nav className="text-center">
-          {Auth.loggedIn() ? (
-            <>
-              <Link to="/profile">Me</Link>
-              <a href="/" onClick={logout}>
-                Logout
-              </a>
-            </>
-          ) : (
-            <>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
-              
-            </>
-          )}
-        </nav>
+        
+          {/* https://www.npmjs.com/package/react-burger-menu */}
+          <Menu right>
+            <a id="add" className="menu-item" href="/">+ Add Bookmark</a>
+            <a id="profile" className="menu-item" href="/about">Profile</a>
+            <a id="about" className="menu-item" href="/about">About</a>
+            <a id="log out" className="menu-item" href="/contact">Logout</a>
+            
+          </Menu>
+        
       </div>
     </header>
   );
