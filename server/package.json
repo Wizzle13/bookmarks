@@ -1,27 +1,24 @@
 {
-  "name": "bookmark-server",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon",
-    "test": "jest --coverage"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^3.10.1",
-    "bcrypt": "^5.0.1",
-    "express": "^4.18.1",
-    "graphql": "^16.5.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.9"
-  },
-  "devDependencies": {
-    "jest": "^28.1.3",
-    "apollo-server-testing":"^2.25.3",
-    "nodemon": "^2.0.3"
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "joi": "^17.12.1",
+    "joi-password-complexity": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
   }
 }
