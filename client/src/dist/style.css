@@ -141,4 +141,19 @@ code {
   background: var(--sign_log_btn);
   color: var(--sign_log_txt);
   margin: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #3bb19b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
