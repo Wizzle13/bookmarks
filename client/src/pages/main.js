@@ -1,3 +1,5 @@
+import BookmarkList from '../components/bookmarklist';
+
 const Main = () => {
 	const handleLogout = () => {
 		localStorage.removeItem("token");
@@ -12,6 +14,9 @@ const Main = () => {
 					Logout
 				</button>
 			</nav>
+			<div>
+              <BookmarkList />
+            </div>
 		</div>
 	);
 };
