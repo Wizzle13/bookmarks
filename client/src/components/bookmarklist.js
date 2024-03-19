@@ -18,6 +18,9 @@ const BookmarkList = ({ thoughts, title }) => {
               <li><a href="https://stackoverflow.com/" class="card-link"><img src="https://stackoverflow.com/favicon.ico" alt="FavIcon" width="32px" /> Stack Over Flow</a></li>
               <li><a href="https://www.favicon.cc/" class="card-link"><img src="https://www.favicon.cc/favicon.ico" alt="FavIcon" width="32px" /> FavIcon</a></li>
             </ul>
+            <button>
+              + Bookmark
+            </button>
         </div>
           
     </div>

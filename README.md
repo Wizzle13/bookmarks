@@ -5,7 +5,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/wizzle13/bookmarks?style=plastic)
 
 ## Description
-
+start MongoDB service on pc
+"npm run develop" to start development server.
 
  ## Table of Contents
  - [Purpose](#purpose)
