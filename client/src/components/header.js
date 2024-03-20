@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
-
+import { HiHomeModern, HiMiniInformationCircle } from "react-icons/hi2";
+import { HiOutlineLogout } from "react-icons/hi";
+import { GiPlagueDoctorProfile } from "react-icons/gi";
 
 const Header = () => {
   
@@ -13,11 +15,10 @@ const Header = () => {
         </Link>
         {/* https://www.npmjs.com/package/react-burger-menu */}
         <Menu right>
-          <a id="home" className="menu-item" href="/">Home</a>
-          <a id="add" className="menu-item" href="/addCatagory">+ Add Catagory</a>
-          <a id="profile" className="menu-item" href="/profile">Profile</a>
-          <a id="about" className="menu-item" href="/about">About</a>
-          <a id="log out" className="menu-item" href="/login">Logout</a>
+          <a id="home" className="menu-item" href="/"><HiHomeModern /> Home</a>
+          <a id="profile" className="menu-item" href="/profile"><GiPlagueDoctorProfile /> Profile</a>
+          <a id="about" className="menu-item" href="/about"><HiMiniInformationCircle /> About</a>
+          <a id="log out" className="menu-item" href="/login"><HiOutlineLogout /> Logout</a>
 
         </Menu>
         

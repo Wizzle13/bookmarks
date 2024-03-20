@@ -1,4 +1,5 @@
 import React from 'react';
+import { GiBookmark } from "react-icons/gi";
 
 const BookmarkList = ({ thoughts, title }) => {
   // if (!thoughts.length) {
@@ -19,7 +20,7 @@ const BookmarkList = ({ thoughts, title }) => {
               <li><a href="https://www.favicon.cc/" class="card-link"><img src="https://www.favicon.cc/favicon.ico" alt="FavIcon" width="32px" /> FavIcon</a></li>
             </ul>
             <button>
-              + Bookmark
+              + <GiBookmark /> Bookmark
             </button>
         </div>
           
