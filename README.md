@@ -57,7 +57,8 @@ start MongoDB service on pc
  ## Tests
  ![None](https://img.shields.io/badge/None-blue)
  ## Resources
- 
+ Modal setup https://www.youtube.com/watch?v=ZCvemsUfwPQ&t=94s
+ React Icons npm install react-icons --save
  login setup https://www.youtube.com/watch?v=HGgyd1bYWsE
  Reference Deepthoughts
 
