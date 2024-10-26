@@ -6,6 +6,7 @@
 
 ## Description
 start MongoDB service on pc
+
 "npm run develop" to start development server.
 
  ## Table of Contents
@@ -55,11 +56,14 @@ start MongoDB service on pc
  ## Contributions
  ![None](https://img.shields.io/badge/None-blue)
  ## Tests
- ![None](https://img.shields.io/badge/None-blue)
+ ![jest](https://img.shields.io/badge/Jest-323330?style=plastic&logo=Jest&logoColor=white)
  ## Resources
  Modal setup https://www.youtube.com/watch?v=ZCvemsUfwPQ&t=94s
+
  React Icons npm install react-icons --save
+
  login setup https://www.youtube.com/watch?v=HGgyd1bYWsE
+ 
  Reference Deepthoughts
 
  ## Links 
